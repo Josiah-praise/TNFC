@@ -1,0 +1,8 @@
+.offscreen {
+    position: absolute;
+    right: 100000px;
+}
+
+.no_overflow {
+    overflow: hidden;
+}

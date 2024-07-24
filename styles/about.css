@@ -1,0 +1,81 @@
+.about {
+    background-color: rgb(233, 233, 233);
+    padding-inline: 3rem;
+    padding-block: 2rem;
+}
+
+.about article {
+    color: black;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    border-left-width: 20px;
+    border-left-style: solid;
+    border-left-color: #e6ba0d;
+    border-right-width: 20px;
+    border-right-style: solid;
+    border-right-color: #e6ba0d;
+    padding-inline: 1rem;
+}
+
+.mission_wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mission_wrapper > div {
+max-width: 40%;
+order: 1;
+display: flex;
+flex-direction: column;
+gap: clamp(1.5rem, 5vw, 3rem);
+min-width: 400px;
+}
+
+.mission_wrapper div h2 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    border: 2px solid rgb(197, 197, 197);
+    width: fit-content;
+    padding: .5rem;
+    background-color: #e6ba0d;
+    margin-inline: auto;
+    color: white;
+    box-shadow: -5px 5px 2px #6e5d17;
+}
+
+.mission_statement_photo {
+    width: revert;
+    height: revert;
+    max-width: 50%;
+}
+
+.mission_statement_details {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+}
+
+.mission_statement {
+    padding: 1.5rem;
+    background-color: #2C302E;
+    border-radius: 1rem;
+    box-shadow: 15px 20px 15px rgb(189, 189, 189);
+    transition: transform 0.15s ease-in-out, box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.mission_statement:hover {
+    transform: translate(10px, -10px);
+    box-shadow: 10px 10px 0 rgb(204, 185, 74);
+}
+
+.mission_photo {
+    max-width: 50%;
+}

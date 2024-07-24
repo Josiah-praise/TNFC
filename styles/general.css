@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Candara';
+    src: url('../assets/fonts/Candara_Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Candara', sans-serif;
+}
+
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
