@@ -1,6 +1,6 @@
 .about {
     background-color: rgb(233, 233, 233);
-    padding-inline: 3rem;
+    padding-inline: clamp(.5rem, 2vw, 3rem);
     padding-block: 2rem;
 }
 
@@ -31,17 +31,17 @@
 }
 
 .mission_wrapper > div {
-max-width: 40%;
-order: 1;
-display: flex;
-flex-direction: column;
-gap: clamp(1.5rem, 5vw, 3rem);
-min-width: 400px;
+    max-width: 40%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 5vw, 3rem);
+    min-width: 400px;
 }
 
 .mission_wrapper div h2 {
     margin-bottom: 1rem;
-    font-size: 1.7rem;
+    font-size: clamp(1.5rem, 2vw, 1.7rem);
     border: 2px solid rgb(197, 197, 197);
     width: fit-content;
     padding: .5rem;
@@ -78,4 +78,23 @@ min-width: 400px;
 
 .mission_photo {
     max-width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+.mission_wrapper > div {
+    max-width: revert;
+    width: 100%;
+    min-width: revert;
+}
+
+.mission_statement:hover {
+    transform: revert;
+    box-shadow: revert;
+}
+
+.mission_statement {
+    box-shadow: revert;
+    transition: revert;
+}
+
 }
